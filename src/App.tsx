@@ -1,4 +1,3 @@
-import './App.css'
 import {randomNumGen} from "./utils/randomNumGen";
 import {IPerson} from "./types";
 import {Table} from "@mantine/core";
@@ -36,7 +35,7 @@ const mockData: IPerson[] = [
         position:'Full Stack Eng.',
         salary: randomNumGen(200000, 100000),
         documents:[
-            documents[0], documents[1]
+            ...documents
         ]
     },
     {
@@ -44,7 +43,7 @@ const mockData: IPerson[] = [
         position:'Back Eng Eng.',
         salary: randomNumGen(200000, 100000),
         documents:[
-            ...documents
+            ...documents, ...documents
         ]
     }
 ]
