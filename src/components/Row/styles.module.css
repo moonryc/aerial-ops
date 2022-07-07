@@ -1,0 +1,23 @@
+
+.container{
+    width:min-content;
+    display: flex;
+}
+
+
+.document{
+    display: flex;
+    border: #e8eaee 2px solid;
+    border-radius: 7px;
+    align-items: center;
+    width: min-content;
+}
+
+.document >img{
+    height: 50px;
+    width: 50px;
+}
+
+.document > a{
+    text-decoration: none;
+}
