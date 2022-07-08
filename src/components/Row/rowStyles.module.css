@@ -1,0 +1,19 @@
+.container{
+    position:relative;
+}
+
+.rowBackground{
+    background-color: #f6f7f9;
+}
+
+.groupContainer{
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
