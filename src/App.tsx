@@ -10,13 +10,13 @@ const mockData: IPerson[] = generateMockData()
 function App() {
     return (
         <div className="App">
-            <Table>
+            <Table className={'customTable'}>
                 <thead>
                 <tr>
-                    <th>Last Name</th>
-                    <th>Position</th>
-                    <th>Salary</th>
-                    <th>Documents</th>
+                    <th className={'colWidth20'}>Last Name</th>
+                    <th className={'colWidth20'}>Position</th>
+                    <th className={'colWidth20'}>Salary</th>
+                    <th className={'colWidth40'}>Documents</th>
                 </tr>
                 </thead>
                 <tbody>
