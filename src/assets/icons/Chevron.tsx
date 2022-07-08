@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Chevron = () => {
-    return (
+interface props {
+    isOpen:boolean
+}
 
-        <svg style={{transform: 'rotate(90deg)'}}  id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+const Chevron:React.FC<props> = ({isOpen}) => {
+    return (
+        <svg style={{transform: `rotate(${isOpen ? '-90deg':'90deg'})`}}  id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
              viewBox="0 0 185.343 185.343">
             <g>
                 <g>
@@ -13,11 +16,10 @@ const Chevron = () => {
                 </g>
             </g>
         </svg>
-
     );
 };
 
-export default Chevron;
+export default React.memo(Chevron);
 
 
 
