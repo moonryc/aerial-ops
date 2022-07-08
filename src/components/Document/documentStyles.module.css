@@ -1,10 +1,3 @@
-
-.container{
-    width:min-content;
-    display: flex;
-}
-
-
 .document{
     display: flex;
     border: #e8eaee 2px solid;
