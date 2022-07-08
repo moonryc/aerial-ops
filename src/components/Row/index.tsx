@@ -1,4 +1,4 @@
-import React, {ForwardedRef, useRef} from 'react';
+import React, {useRef} from 'react';
 import {IPerson} from "../../types";
 import styles from './rowStyles.module.css'
 import {Group} from "@mantine/core";
