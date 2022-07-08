@@ -63,7 +63,7 @@ function App() {
                 </thead>
                 <tbody>
                 {mockData.length>0 && mockData.map((person,index)=>(
-                    <Row key={index} person={person}/>
+                    <Row key={index} person={person} rowNumber={index}/>
                 ))}
                 </tbody>
             </Table>
