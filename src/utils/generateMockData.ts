@@ -38,7 +38,7 @@ export const generateMockData = ():IPerson[] => {
             position:'Full Stack Eng.',
             salary: genRandNumber(200000, 100000),
             documents:[
-                ...documents
+                documents[0], documents[1]
             ]
         },
         {

@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {MutableRefObject, useRef} from 'react';
 import {IPerson} from "../../types";
 import styles from './rowStyles.module.css'
 import {Group} from "@mantine/core";
@@ -31,9 +31,11 @@ const Row: React.FC<props> = ({person,rowNumber}) => {
                 <Group ref={containerRef} spacing={'md'} className={`${styles.groupContainer} ${!observedEntry?.isIntersecting && styles.hidden}`} >
                     {documents.length > 0 && documents.map((documentInfo, index) =>{
                         if(documents.length-1 === index){
-                            return <Document ref={ref} key={documentInfo.name} documentInfo={documentInfo}/>
+                            return <Document ref={ref}
+                                             key={documentInfo.name}
+                                             documentInfo={documentInfo}/>
                         }else{
-                            return <Document key={documentInfo.name} documentInfo={documentInfo}/>
+                            return <Document key={documentInfo.name+index+rowNumber} documentInfo={documentInfo}/>
                         }
                     })}
                 </Group>

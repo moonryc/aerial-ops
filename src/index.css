@@ -5,7 +5,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 code {
@@ -13,16 +13,26 @@ code {
     monospace;
 }
 
+
+
+tbody, table, body, html{
+    width: 100vw;
+}
+
 .customTable{
     table-layout:fixed;
 }
 
+td, th {
+    min-width: 25%;
+}
+
 .colWidth20{
-    min-width:50px;
-    width:100px
+    /*min-width:100px;*/
+    width:90px
 
 }
 
 .colWidth40{
-    width:40%
+    max-width: 25%;
 }

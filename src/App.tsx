@@ -9,7 +9,7 @@ const mockData: IPerson[] = generateMockData()
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <Table className={'customTable'}>
                 <thead>
                 <tr>

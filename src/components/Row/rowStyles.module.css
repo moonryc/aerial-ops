@@ -7,13 +7,22 @@
 }
 
 .groupContainer{
-    width: fit-content;
+    /*width: fit-content;*/
     display: flex;
     flex-wrap: nowrap;
-    max-width: 100%;
+    /*max-width: 100%;*/
+    overflow-x: hidden;
 }
 
 .hidden{
     visibility: hidden;
 }
+
+@media (overflow-inline: scroll){
+    .groupContainer{
+        /*visibility: hidden;*/
+        background-color: aqua;
+    }
+}
+
 

@@ -31,7 +31,7 @@ const CollapsedView: React.FC<props> = ({documents}) => {
                         overflowY: isMoreThanFour ? 'scroll' : 'hidden'
                     }}>
                         {documents.length > 0 && documents.map((documentInfo, index) => (
-                            <Menu.Item><Document documentInfo={documentInfo}/></Menu.Item>
+                            <Menu.Item key={documentInfo.name+index}><Document documentInfo={documentInfo}/></Menu.Item>
                         ))}
                     </Stack>
                 </Menu>
